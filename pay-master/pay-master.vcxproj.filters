@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Pay\Alipay.cpp">
+      <Filter>Pay</Filter>
+    </ClCompile>
+    <ClCompile Include="Pay\WeChat.cpp">
+      <Filter>Pay</Filter>
+    </ClCompile>
+    <ClCompile Include="PayUtils\RSAUtils.cpp">
+      <Filter>RSA</Filter>
+    </ClCompile>
+    <ClCompile Include="PayUtils\Md5Utils.cpp">
+      <Filter>PayUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="PayUtils\Utils.cpp">
+      <Filter>PayUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="PayUtils\HttpClient.cpp">
+      <Filter>HttpClient</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Pay">
+      <UniqueIdentifier>{38ed1fad-d5cf-4b57-97a2-ff46632da5a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RSA">
+      <UniqueIdentifier>{56c2300a-b2fe-4af8-924f-a4c4685e00bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PayUtils">
+      <UniqueIdentifier>{fb7b1921-c61a-4177-8cf5-0af3b5d5c109}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HttpClient">
+      <UniqueIdentifier>{91b33bee-2363-4e59-9721-88c0ec0e66db}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Pay\Alipay.h">
+      <Filter>Pay</Filter>
+    </ClInclude>
+    <ClInclude Include="Pay\PayHeader.h">
+      <Filter>Pay</Filter>
+    </ClInclude>
+    <ClInclude Include="Pay\WeChat.h">
+      <Filter>Pay</Filter>
+    </ClInclude>
+    <ClInclude Include="Pay\PayBase.h">
+      <Filter>Pay</Filter>
+    </ClInclude>
+    <ClInclude Include="PayUtils\RSAUtils.h">
+      <Filter>RSA</Filter>
+    </ClInclude>
+    <ClInclude Include="PayUtils\Md5Utils.h">
+      <Filter>PayUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="PayUtils\Utils.h">
+      <Filter>PayUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="PayUtils\HttpClient.h">
+      <Filter>HttpClient</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
