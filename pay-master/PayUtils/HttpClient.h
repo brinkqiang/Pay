@@ -9,7 +9,7 @@ class CHttpClient
 #define CHTTPCLIENT_RET_OK 0
 #define CHTTPCLIENT_RET_UNKNOW_ERROR -65535
 public:
-	static std::vector<std::string> makeHeaderWithmap(const std::map<std::string, std::string>& mapHeader);
+	static std::vector<std::string> makeHeaderWithMap(const std::map<std::string, std::string>& mapHeader);
 
 
 	static int get(

@@ -4,7 +4,7 @@
 
 using namespace std;
 
-vector<string> CHttpClient::makeHeaderWithmap(const map<string, string>& mapHeader)
+vector<string> CHttpClient::makeHeaderWithMap(const map<string, string>& mapHeader)
 {
 	vector<string> vecHeader;
 	for (auto itr = mapHeader.begin(); itr != mapHeader.end(); ++itr)

@@ -226,16 +226,12 @@ string CUtils::getCurentTimeStampStr()
 
 string CUtils::i2str(int i)
 {
-	char buf[16] = { 0 };
-	sprintf(buf, "%d", i);
-	return string(buf);
+	return lexical_cast<string>(i);
 }
 
 string CUtils::i2str(long long ll)
 {
-	char buf[32] = { 0 };
-	sprintf(buf, "%lld", ll);
-	return string(buf);
+	return lexical_cast<string>(ll);
 }
 
 vector<string> CUtils::createDictionaryWithMap(map<string, string> mapNameValue)
