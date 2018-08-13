@@ -1,9 +1,9 @@
 #include "WeChat.h"
 #include "Tinyxml/tinyxml.h"
 #include "rapidjson/document.h"
-#include "PayUtils/Utils.h"
-#include "PayUtils/Md5Utils.h"
-#include "PayUtils/HttpClient.h"
+#include "Utils/Utils.h"
+#include "Utils/Md5Utils.h"
+#include "Utils/HttpClient.h"
 #include "PayHeader.h"
 #include <stdarg.h>
 #include <boost/format.hpp>

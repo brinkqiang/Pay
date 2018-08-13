@@ -43,6 +43,7 @@ string& strAlipayContent = alipay.appendPayContent(
 
 //create a struct to save the respsonse inforamtion
 CAlipayResps alipayResps;
+
 //refund a bill
 enumAlipayRet iAlpayRet = alipay.refund(
 	10000,
@@ -74,5 +75,7 @@ enumWechatRet iWeChatRet = wechat.prepayWithSign(
 	"your notify url",
 	wechatResps
 );
+
+//get sign
 string& strPrepaySignedContent = wechatResps.strPrepaySignedContent;
 ```

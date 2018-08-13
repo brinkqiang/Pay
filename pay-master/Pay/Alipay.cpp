@@ -1,9 +1,9 @@
 #include "Alipay.h"
 #include "rapidjson/prettywriter.h"  
 #include "rapidjson/stringbuffer.h"
-#include "PayUtils/Utils.h"
-#include "PayUtils/RSAUtils.h"
-#include "PayUtils/HttpClient.h"
+#include "Utils/Utils.h"
+#include "Utils/RSAUtils.h"
+#include "Utils/HttpClient.h"
 #include "PayHeader.h"
 #include <boost/format.hpp>
 
@@ -309,7 +309,7 @@ string CAlipay::appendPayContent(
 	if (!strPassBackParams.empty())
 		u8PassBackParams = ch_trans::is_utf8(strPassBackParams.c_str()) ? strPassBackParams : ch_trans::ascii_to_utf8(strPassBackParams);
 #else
-	const string& u8PassBackParams = u8PassBackParams;
+	const string& u8PassBackParams = strPassBackParams;
 #endif
 
 	format f("{\"timeout_express\":\"%s\",\"product_code\":\"QUICK_MSECURITY_PAY\",\"total_amount\":\"%.2f\",\"subject\":\"%s\",\"out_trade_no\":\"%s\"%s}");
